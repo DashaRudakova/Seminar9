@@ -19,7 +19,8 @@ void NaturalToLow(int m, int n)
     }
     else
     {
-        NaturalToLow(n, m);
         Console.Write (m + " ");
+        m = m + 1;
+        NaturalToLow(m, n);
     }
 }
